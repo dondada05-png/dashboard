@@ -14,6 +14,7 @@ import Users from "./pages/admin/Users";
 import LiveStreams from "./pages/admin/LiveStreams";
 import Reports from "./pages/admin/Reports";
 import Transactions from "./pages/admin/Transactions";
+import Earnings from "./pages/admin/Earnings";
 import Verification from "./pages/admin/Verification";
 
 const queryClient = new QueryClient();
