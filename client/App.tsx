@@ -40,7 +40,7 @@ const App = () => (
             <Route path="verification" element={<Verification />} />
             <Route path="notifications" element={<Dashboard />} />
             <Route path="moderation" element={<Reports />} />
-            <Route path="settings" element={<Dashboard />} />
+            <Route path="settings" element={<Settings />} />
           </Route>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
