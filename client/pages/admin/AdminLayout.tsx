@@ -171,16 +171,18 @@ export default function AdminLayout() {
           </div>
           <div className="flex-1 min-w-0">
             <p className="text-sm font-medium text-sidebar-foreground truncate">
-              Admin User
+              {user?.name || "Admin User"}
             </p>
             <p className="text-xs text-sidebar-foreground/60 truncate">
-              admin@stroomup.com
+              {user?.email || "admin@stroomup.com"}
             </p>
           </div>
           <Button
             variant="ghost"
             size="sm"
+            onClick={handleLogout}
             className="h-8 w-8 p-0 text-sidebar-foreground hover:bg-sidebar-accent"
+            title="Logout"
           >
             <LogOut className="h-4 w-4" />
           </Button>
