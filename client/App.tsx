@@ -25,31 +25,42 @@ const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          {/* Admin Routes */}
-          <Route path="/admin" element={<AdminLayout />}>
-            <Route index element={<Dashboard />} />
-            <Route path="users" element={<Users />} />
-            <Route path="creators" element={<Users />} />
-            <Route path="streams" element={<LiveStreams />} />
-            <Route path="reports" element={<Reports />} />
-            <Route path="transactions" element={<Transactions />} />
-            <Route path="earnings" element={<Earnings />} />
-            <Route path="verification" element={<Verification />} />
-            <Route path="notifications" element={<Dashboard />} />
-            <Route path="moderation" element={<Reports />} />
-            <Route path="settings" element={<Settings />} />
-          </Route>
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
+    <AuthProvider>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            {/* Admin Login Route */}
+            <Route path="/admin/login" element={<AdminLogin />} />
+            {/* Protected Admin Routes */}
+            <Route
+              path="/admin"
+              element={
+                <ProtectedRoute requireAdmin>
+                  <AdminLayout />
+                </ProtectedRoute>
+              }
+            >
+              <Route index element={<Dashboard />} />
+              <Route path="users" element={<Users />} />
+              <Route path="creators" element={<Users />} />
+              <Route path="streams" element={<LiveStreams />} />
+              <Route path="reports" element={<Reports />} />
+              <Route path="transactions" element={<Transactions />} />
+              <Route path="earnings" element={<Earnings />} />
+              <Route path="verification" element={<Verification />} />
+              <Route path="notifications" element={<Dashboard />} />
+              <Route path="moderation" element={<Reports />} />
+              <Route path="settings" element={<Settings />} />
+            </Route>
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </AuthProvider>
   </QueryClientProvider>
 );
 
