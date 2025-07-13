@@ -46,19 +46,34 @@ export default function AdminLogin() {
     setIsLoading(true);
 
     try {
-      const success = await login(email, password);
+      const result = await login(email, password);
 
-      if (success) {
-        // Redirect to intended destination
-        navigate(from, { replace: true });
+      if (result.success) {
+        if (result.requiresTwoFactor) {
+          // Don't redirect yet, wait for 2FA verification
+          setLoginStep("2fa");
+        } else {
+          // Direct login without 2FA
+          navigate(from, { replace: true });
+        }
       } else {
         setError("Invalid email or password. Please try again.");
+        setIsLoading(false);
       }
     } catch (err) {
       setError("An error occurred during login. Please try again.");
-    } finally {
       setIsLoading(false);
     }
+  };
+
+  const handle2FASuccess = () => {
+    navigate(from, { replace: true });
+  };
+
+  const handleBackToLogin = () => {
+    setLoginStep("credentials");
+    setError("");
+    setIsLoading(false);
   };
 
   return (
