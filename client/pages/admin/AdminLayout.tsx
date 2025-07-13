@@ -109,10 +109,12 @@ export default function AdminLayout() {
     <div className="flex h-full flex-col bg-sidebar">
       {/* Logo */}
       <div className="flex h-16 items-center border-b border-sidebar-border px-6">
-        <div className="flex items-center space-x-2">
-          <div className="h-8 w-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold text-sm">S</span>
-          </div>
+        <div className="flex items-center space-x-3">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2Fca8bde47d0f2460ebb2309d2c38bd41f%2F0539eb64332d4f4aa6d123074afc50da?format=webp&width=800"
+            alt="StroomUP Logo"
+            className="h-10 w-10 rounded-lg object-cover"
+          />
           <span className="text-lg font-bold text-sidebar-foreground">
             StroomUP Admin
           </span>
