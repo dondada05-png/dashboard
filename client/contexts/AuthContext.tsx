@@ -5,6 +5,7 @@ import {
   useEffect,
   ReactNode,
 } from "react";
+import { authenticator } from "otplib";
 
 interface User {
   id: string;
