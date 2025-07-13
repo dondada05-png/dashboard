@@ -25,7 +25,7 @@ export default function Index() {
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
-          <Button onClick={() => navigate("/admin")} className="w-full">
+          <Button onClick={() => navigate("/admin/login")} className="w-full">
             Access Admin Dashboard
           </Button>
           <p className="text-sm text-muted-foreground text-center">
