@@ -176,21 +176,6 @@ export default function AdminLogin() {
                 )}
               </Button>
             </form>
-
-            {/* Demo Credentials */}
-            <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-950/20 rounded-lg border border-blue-200 dark:border-blue-800">
-              <h4 className="text-sm font-medium text-blue-900 dark:text-blue-100 mb-2">
-                Demo Credentials
-              </h4>
-              <div className="text-xs text-blue-700 dark:text-blue-300 space-y-1">
-                <div>
-                  <strong>Email:</strong> admin@stroomup.com
-                </div>
-                <div>
-                  <strong>Password:</strong> admin123
-                </div>
-              </div>
-            </div>
           </CardContent>
         </Card>
 
