@@ -32,6 +32,14 @@ export default function AdminLogin() {
   // Get the intended destination from location state, default to /admin
   const from = location.state?.from?.pathname || "/admin";
 
+  // Handle transition to 2FA step
+  useEffect(() => {
+    if (requiresTwoFactor) {
+      setLoginStep("2fa");
+      setIsLoading(false);
+    }
+  }, [requiresTwoFactor]);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
