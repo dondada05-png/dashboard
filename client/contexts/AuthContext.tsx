@@ -12,13 +12,24 @@ interface User {
   email: string;
   name: string;
   role: "admin";
+  twoFactorEnabled: boolean;
+  twoFactorSecret?: string;
 }
 
 interface AuthContextType {
   user: User | null;
   isAuthenticated: boolean;
   isLoading: boolean;
-  login: (email: string, password: string) => Promise<boolean>;
+  requiresTwoFactor: boolean;
+  tempUserId: string | null;
+  login: (
+    email: string,
+    password: string,
+  ) => Promise<{ success: boolean; requiresTwoFactor?: boolean }>;
+  verifyTwoFactor: (token: string) => Promise<boolean>;
+  setup2FA: () => Promise<{ secret: string; qrCodeUrl: string }>;
+  enable2FA: (token: string) => Promise<boolean>;
+  disable2FA: (password: string) => Promise<boolean>;
   logout: () => void;
 }
 
