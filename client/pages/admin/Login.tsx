@@ -21,8 +21,11 @@ export default function AdminLogin() {
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [loginStep, setLoginStep] = useState<"credentials" | "2fa">(
+    "credentials",
+  );
 
-  const { login } = useAuth();
+  const { login, requiresTwoFactor } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
 
