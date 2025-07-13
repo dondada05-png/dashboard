@@ -95,6 +95,12 @@ export default function AdminLayout() {
   const [darkMode, setDarkMode] = useState(true);
   const location = useLocation();
   const navigate = useNavigate();
+  const { user, logout } = useAuth();
+
+  const handleLogout = () => {
+    logout();
+    navigate("/admin/login");
+  };
 
   // Enable dark mode by default
   useEffect(() => {
