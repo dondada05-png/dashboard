@@ -16,6 +16,7 @@ import Reports from "./pages/admin/Reports";
 import Transactions from "./pages/admin/Transactions";
 import Earnings from "./pages/admin/Earnings";
 import Verification from "./pages/admin/Verification";
+import Settings from "./pages/admin/Settings";
 
 const queryClient = new QueryClient();
 
