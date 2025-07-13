@@ -71,38 +71,55 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
     setIsLoading(false);
   }, []);
 
-  const login = async (email: string, password: string): Promise<boolean> => {
+  const login = async (
+    email: string,
+    password: string,
+  ): Promise<{ success: boolean; requiresTwoFactor?: boolean }> => {
     setIsLoading(true);
 
     try {
       // Simulate API call - in real app, this would be an actual API endpoint
       // For demo purposes, we'll use hardcoded credentials
       if (email === "admin@stroomup.com" && password === "admin123") {
-        const adminUser: User = {
-          id: "admin-1",
-          email: "admin@stroomup.com",
-          name: "Admin User",
-          role: "admin",
-        };
+        // Get stored user data to check if 2FA is enabled
+        const stored2FAData = localStorage.getItem("admin_2fa_data");
+        const twoFactorEnabled = !!stored2FAData;
 
-        // Simulate token generation
-        const token = `admin_token_${Date.now()}`;
+        if (twoFactorEnabled) {
+          // User has 2FA enabled, require verification
+          setTempUserId("admin-1");
+          setRequiresTwoFactor(true);
+          setIsLoading(false);
+          return { success: true, requiresTwoFactor: true };
+        } else {
+          // Login without 2FA
+          const adminUser: User = {
+            id: "admin-1",
+            email: "admin@stroomup.com",
+            name: "Admin User",
+            role: "admin",
+            twoFactorEnabled: false,
+          };
 
-        // Store in localStorage (in production, consider using httpOnly cookies)
-        localStorage.setItem("admin_user", JSON.stringify(adminUser));
-        localStorage.setItem("admin_token", token);
+          // Simulate token generation
+          const token = `admin_token_${Date.now()}`;
 
-        setUser(adminUser);
-        setIsLoading(false);
-        return true;
+          // Store in localStorage (in production, consider using httpOnly cookies)
+          localStorage.setItem("admin_user", JSON.stringify(adminUser));
+          localStorage.setItem("admin_token", token);
+
+          setUser(adminUser);
+          setIsLoading(false);
+          return { success: true, requiresTwoFactor: false };
+        }
       } else {
         setIsLoading(false);
-        return false;
+        return { success: false };
       }
     } catch (error) {
       console.error("Login error:", error);
       setIsLoading(false);
-      return false;
+      return { success: false };
     }
   };
 
