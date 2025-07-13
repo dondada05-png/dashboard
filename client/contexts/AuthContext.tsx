@@ -50,6 +50,8 @@ interface AuthProviderProps {
 export const AuthProvider = ({ children }: AuthProviderProps) => {
   const [user, setUser] = useState<User | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [requiresTwoFactor, setRequiresTwoFactor] = useState(false);
+  const [tempUserId, setTempUserId] = useState<string | null>(null);
 
   // Check for existing session on mount
   useEffect(() => {
