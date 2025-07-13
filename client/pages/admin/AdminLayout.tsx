@@ -95,6 +95,11 @@ export default function AdminLayout() {
   const location = useLocation();
   const navigate = useNavigate();
 
+  // Enable dark mode by default
+  useEffect(() => {
+    document.documentElement.classList.add("dark");
+  }, []);
+
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
     document.documentElement.classList.toggle("dark");
