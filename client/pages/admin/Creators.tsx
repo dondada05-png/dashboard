@@ -58,7 +58,6 @@ interface Creator {
   verificationBadge?: boolean;
   totalLiveStreams?: number;
   averageViewers?: number;
-  tier?: "bronze" | "silver" | "gold" | "platinum";
   lastStreamDate?: string;
 }
 
