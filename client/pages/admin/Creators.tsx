@@ -400,7 +400,6 @@ export default function Creators() {
               <TableRow>
                 <TableHead>Creator</TableHead>
                 <TableHead>Verification</TableHead>
-                <TableHead>Tier</TableHead>
                 <TableHead>Followers</TableHead>
                 <TableHead>Earnings</TableHead>
                 <TableHead>Streams</TableHead>
