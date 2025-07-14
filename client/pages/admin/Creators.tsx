@@ -206,18 +206,11 @@ export default function Creators() {
     const matchesStatus =
       statusFilter === "all" || creator.status === statusFilter;
     const matchesNiche = nicheFilter === "all" || creator.niche === nicheFilter;
-    const matchesTier = tierFilter === "all" || creator.tier === tierFilter;
-    return matchesSearch && matchesStatus && matchesNiche && matchesTier;
+    return matchesSearch && matchesStatus && matchesNiche;
   });
 
   const handleCreatorClick = (creator: Creator) => {
-    setSelectedCreator(creator);
-    setIsProfileModalOpen(true);
-  };
-
-  const handleUserUpdate = (updatedUser: any) => {
-    // Here you would typically update the user in your state/database
-    console.log("User updated:", updatedUser);
+    navigate(`/admin/creators/${creator.id}`);
   };
 
   const getStatusBadge = (status: string) => {
