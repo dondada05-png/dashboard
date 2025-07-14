@@ -436,9 +436,6 @@ export default function Creators() {
                     {getVerificationBadge(creator.verificationStatus || "none")}
                   </TableCell>
                   <TableCell>
-                    {getTierBadge(creator.tier || "bronze")}
-                  </TableCell>
-                  <TableCell>
                     <div className="flex items-center space-x-1">
                       <Users className="h-4 w-4 text-muted-foreground" />
                       <span>{creator.followers.toLocaleString()}</span>
