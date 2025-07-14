@@ -46,7 +46,7 @@ const App = () => (
             >
               <Route index element={<Dashboard />} />
               <Route path="users" element={<Users />} />
-              <Route path="creators" element={<Users />} />
+              <Route path="creators" element={<Creators />} />
               <Route path="streams" element={<LiveStreams />} />
               <Route path="reports" element={<Reports />} />
               <Route path="transactions" element={<Transactions />} />
