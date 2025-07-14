@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   Card,
   CardContent,
@@ -30,7 +31,6 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import UserProfileModal from "@/components/UserProfileModal";
 import {
   Search,
   Filter,
@@ -42,7 +42,6 @@ import {
   Radio,
   CheckCircle,
   AlertTriangle,
-  Crown,
 } from "lucide-react";
 
 interface Creator {
