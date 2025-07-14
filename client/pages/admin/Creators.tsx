@@ -376,18 +376,7 @@ export default function Creators() {
                 <SelectItem value="Comedy">Comedy</SelectItem>
               </SelectContent>
             </Select>
-            <Select value={tierFilter} onValueChange={setTierFilter}>
-              <SelectTrigger className="w-full md:w-[140px]">
-                <SelectValue placeholder="Tier" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">All Tiers</SelectItem>
-                <SelectItem value="bronze">Bronze</SelectItem>
-                <SelectItem value="silver">Silver</SelectItem>
-                <SelectItem value="gold">Gold</SelectItem>
-                <SelectItem value="platinum">Platinum</SelectItem>
-              </SelectContent>
-            </Select>
+
             <Button variant="outline" className="w-full md:w-auto">
               <Filter className="mr-2 h-4 w-4" />
               Advanced
