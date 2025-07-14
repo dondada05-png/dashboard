@@ -250,34 +250,15 @@ export default function Creators() {
     );
   };
 
-  const getTierBadge = (tier: string) => {
-    const colors = {
-      bronze: "bg-amber-600",
-      silver: "bg-gray-400",
-      gold: "bg-yellow-500",
-      platinum: "bg-purple-600",
-    };
-    return (
-      <Badge
-        className={`text-white ${colors[tier as keyof typeof colors] || "bg-gray-400"}`}
-      >
-        <Crown className="h-3 w-3 mr-1" />
-        {tier.charAt(0).toUpperCase() + tier.slice(1)}
-      </Badge>
-    );
-  };
-
   const getCreatorStats = () => {
     const total = creators.length;
     const verified = creators.filter((c) => c.verificationBadge).length;
     const pending = creators.filter(
       (c) => c.verificationStatus === "pending",
     ).length;
-    const topTier = creators.filter(
-      (c) => c.tier === "gold" || c.tier === "platinum",
-    ).length;
+    const active = creators.filter((c) => c.status === "active").length;
 
-    return { total, verified, pending, topTier };
+    return { total, verified, pending, active };
   };
 
   const stats = getCreatorStats();
