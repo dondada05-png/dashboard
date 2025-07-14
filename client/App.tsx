@@ -20,6 +20,7 @@ import Transactions from "./pages/admin/Transactions";
 import Earnings from "./pages/admin/Earnings";
 import Verification from "./pages/admin/Verification";
 import Settings from "./pages/admin/Settings";
+import Creators from "./pages/admin/Creators";
 
 const queryClient = new QueryClient();
 
