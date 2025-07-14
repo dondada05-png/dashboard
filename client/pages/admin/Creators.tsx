@@ -82,7 +82,6 @@ export default function Creators() {
       verificationBadge: true,
       totalLiveStreams: 85,
       averageViewers: 1234,
-      tier: "gold",
       lastStreamDate: "2024-01-15",
     },
     {
@@ -99,7 +98,6 @@ export default function Creators() {
       verificationBadge: true,
       totalLiveStreams: 76,
       averageViewers: 856,
-      tier: "gold",
       lastStreamDate: "2024-01-14",
     },
     {
@@ -116,7 +114,6 @@ export default function Creators() {
       verificationBadge: false,
       totalLiveStreams: 65,
       averageViewers: 642,
-      tier: "silver",
       lastStreamDate: "2024-01-13",
     },
     {
@@ -133,7 +130,6 @@ export default function Creators() {
       verificationBadge: false,
       totalLiveStreams: 59,
       averageViewers: 423,
-      tier: "silver",
       lastStreamDate: "2024-01-12",
     },
     {
@@ -150,7 +146,6 @@ export default function Creators() {
       verificationBadge: false,
       totalLiveStreams: 51,
       averageViewers: 298,
-      tier: "bronze",
       lastStreamDate: "2024-01-11",
     },
     {
@@ -167,7 +162,6 @@ export default function Creators() {
       verificationBadge: true,
       totalLiveStreams: 102,
       averageViewers: 1560,
-      tier: "platinum",
       lastStreamDate: "2024-01-15",
     },
     {
@@ -184,7 +178,6 @@ export default function Creators() {
       verificationBadge: false,
       totalLiveStreams: 34,
       averageViewers: 385,
-      tier: "bronze",
       lastStreamDate: "2024-01-08",
     },
     {
@@ -201,7 +194,6 @@ export default function Creators() {
       verificationBadge: false,
       totalLiveStreams: 72,
       averageViewers: 720,
-      tier: "silver",
       lastStreamDate: "2024-01-14",
     },
   ];
