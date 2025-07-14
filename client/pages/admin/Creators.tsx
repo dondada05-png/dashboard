@@ -493,17 +493,6 @@ export default function Creators() {
           </Table>
         </CardContent>
       </Card>
-
-      {/* User Profile Modal */}
-      <UserProfileModal
-        user={selectedCreator}
-        isOpen={isProfileModalOpen}
-        onClose={() => {
-          setIsProfileModalOpen(false);
-          setSelectedCreator(null);
-        }}
-        onUserUpdate={handleUserUpdate}
-      />
     </div>
   );
 }
