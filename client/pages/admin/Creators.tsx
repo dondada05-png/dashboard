@@ -62,12 +62,10 @@ interface Creator {
 }
 
 export default function Creators() {
+  const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState("");
   const [statusFilter, setStatusFilter] = useState("all");
   const [nicheFilter, setNicheFilter] = useState("all");
-  const [tierFilter, setTierFilter] = useState("all");
-  const [selectedCreator, setSelectedCreator] = useState<Creator | null>(null);
-  const [isProfileModalOpen, setIsProfileModalOpen] = useState(false);
 
   const creators: Creator[] = [
     {
