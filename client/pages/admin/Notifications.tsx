@@ -87,7 +87,8 @@ export default function Notifications() {
       requestType: "unban",
       submittedAt: "2024-01-15T10:30:00Z",
       reason: "False positive ban",
-      userArgument: "I believe my account was wrongfully banned. I was reported by competitors who were jealous of my success on the platform. I have never violated any community guidelines and have always been respectful to other users. I have attached screenshots showing my positive interactions with the community and evidence that the reports against me were coordinated. I would appreciate a review of my case as this ban has severely impacted my income and reputation. I am committed to continuing to create quality content and following all platform rules.",
+      userArgument:
+        "I believe my account was wrongfully banned. I was reported by competitors who were jealous of my success on the platform. I have never violated any community guidelines and have always been respectful to other users. I have attached screenshots showing my positive interactions with the community and evidence that the reports against me were coordinated. I would appreciate a review of my case as this ban has severely impacted my income and reputation. I am committed to continuing to create quality content and following all platform rules.",
       attachedDocuments: [
         {
           id: "doc1",
@@ -97,7 +98,7 @@ export default function Notifications() {
           uploadedAt: "2024-01-15T10:25:00Z",
         },
         {
-          id: "doc2", 
+          id: "doc2",
           name: "evidence_screenshots.zip",
           type: "ZIP",
           size: "8.7 MB",
@@ -106,7 +107,7 @@ export default function Notifications() {
         {
           id: "doc3",
           name: "character_references.pdf",
-          type: "PDF", 
+          type: "PDF",
           size: "1.1 MB",
           uploadedAt: "2024-01-15T10:30:00Z",
         },
@@ -119,16 +120,17 @@ export default function Notifications() {
       id: 2,
       userId: 15,
       username: "suspended_creator",
-      email: "suspended@example.com", 
+      email: "suspended@example.com",
       currentStatus: "suspended",
       requestType: "unsuspension",
       submittedAt: "2024-01-14T16:20:00Z",
       reason: "Misunderstanding about content policy",
-      userArgument: "I was suspended for allegedly posting inappropriate content, but I believe there was a misunderstanding about the nature of my content. My streams are educational in nature and I always ensure they comply with platform guidelines. The reported content was taken out of context. I have been a creator on this platform for over 2 years and have built a positive community. I am willing to undergo additional training on content guidelines if needed.",
+      userArgument:
+        "I was suspended for allegedly posting inappropriate content, but I believe there was a misunderstanding about the nature of my content. My streams are educational in nature and I always ensure they comply with platform guidelines. The reported content was taken out of context. I have been a creator on this platform for over 2 years and have built a positive community. I am willing to undergo additional training on content guidelines if needed.",
       attachedDocuments: [
         {
           id: "doc4",
-          name: "content_explanation.pdf", 
+          name: "content_explanation.pdf",
           type: "PDF",
           size: "1.8 MB",
           uploadedAt: "2024-01-14T16:15:00Z",
@@ -137,7 +139,7 @@ export default function Notifications() {
           id: "doc5",
           name: "platform_history.pdf",
           type: "PDF",
-          size: "3.2 MB", 
+          size: "3.2 MB",
           uploadedAt: "2024-01-14T16:18:00Z",
         },
       ],
@@ -153,15 +155,16 @@ export default function Notifications() {
       username: "appeal_user_03",
       email: "appealuser@example.com",
       currentStatus: "banned",
-      requestType: "unban", 
+      requestType: "unban",
       submittedAt: "2024-01-13T14:10:00Z",
       reason: "Account was compromised",
-      userArgument: "My account was compromised by hackers who used it to violate platform rules. I have since secured my account with 2FA and changed all passwords. I was not responsible for the actions that led to the ban. I have attached security reports and evidence of the compromise. I am a long-time user who has always followed the rules and this incident was beyond my control.",
+      userArgument:
+        "My account was compromised by hackers who used it to violate platform rules. I have since secured my account with 2FA and changed all passwords. I was not responsible for the actions that led to the ban. I have attached security reports and evidence of the compromise. I am a long-time user who has always followed the rules and this incident was beyond my control.",
       attachedDocuments: [
         {
           id: "doc6",
           name: "security_report.pdf",
-          type: "PDF", 
+          type: "PDF",
           size: "4.1 MB",
           uploadedAt: "2024-01-13T14:05:00Z",
         },
@@ -174,11 +177,12 @@ export default function Notifications() {
         },
       ],
       status: "rejected",
-      reviewedBy: "admin_mike", 
+      reviewedBy: "admin_mike",
       reviewedAt: "2024-01-14T11:30:00Z",
       originalBanReason: "Spam and malicious behavior",
       banDate: "2024-01-11T20:15:00Z",
-      adminNotes: "Insufficient evidence of compromise. Pattern of behavior indicates intentional violations.",
+      adminNotes:
+        "Insufficient evidence of compromise. Pattern of behavior indicates intentional violations.",
     },
     {
       id: 4,
@@ -187,15 +191,16 @@ export default function Notifications() {
       email: "reformed@example.com",
       currentStatus: "suspended",
       requestType: "unsuspension",
-      submittedAt: "2024-01-16T09:45:00Z", 
+      submittedAt: "2024-01-16T09:45:00Z",
       reason: "Changed behavior and understanding",
-      userArgument: "I acknowledge that my previous behavior was inappropriate and I have taken time to reflect on my actions. I have completed anger management courses and now understand the impact of my behavior on the community. I am committed to being a positive member of the platform and following all guidelines. I have attached certificates from my completed courses and would welcome the opportunity to prove that I have changed.",
+      userArgument:
+        "I acknowledge that my previous behavior was inappropriate and I have taken time to reflect on my actions. I have completed anger management courses and now understand the impact of my behavior on the community. I am committed to being a positive member of the platform and following all guidelines. I have attached certificates from my completed courses and would welcome the opportunity to prove that I have changed.",
       attachedDocuments: [
         {
           id: "doc8",
           name: "anger_management_certificate.pdf",
           type: "PDF",
-          size: "890 KB", 
+          size: "890 KB",
           uploadedAt: "2024-01-16T09:40:00Z",
         },
         {
@@ -208,20 +213,23 @@ export default function Notifications() {
       ],
       status: "approved",
       reviewedBy: "admin_emma",
-      reviewedAt: "2024-01-16T15:20:00Z", 
+      reviewedAt: "2024-01-16T15:20:00Z",
       originalBanReason: "Aggressive behavior and harassment",
       banDate: "2024-01-08T12:00:00Z",
-      adminNotes: "User shows genuine remorse and has taken concrete steps to improve. Approved with 30-day probation period.",
+      adminNotes:
+        "User shows genuine remorse and has taken concrete steps to improve. Approved with 30-day probation period.",
     },
   ];
 
   const filteredRequests = appealRequests.filter((request) => {
-    const matchesSearch = 
+    const matchesSearch =
       request.username.toLowerCase().includes(searchTerm.toLowerCase()) ||
       request.email.toLowerCase().includes(searchTerm.toLowerCase()) ||
       request.reason.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesStatus = statusFilter === "all" || request.status === statusFilter;
-    const matchesType = typeFilter === "all" || request.requestType === typeFilter;
+    const matchesStatus =
+      statusFilter === "all" || request.status === statusFilter;
+    const matchesType =
+      typeFilter === "all" || request.requestType === typeFilter;
     return matchesSearch && matchesStatus && matchesType;
   });
 
@@ -232,7 +240,7 @@ export default function Notifications() {
   const getStatusBadge = (status: string) => {
     const variants = {
       pending: "secondary",
-      under_review: "default", 
+      under_review: "default",
       approved: "default",
       rejected: "destructive",
     } as const;
@@ -244,9 +252,12 @@ export default function Notifications() {
     };
     const Icon = icons[status as keyof typeof icons];
     return (
-      <Badge variant={variants[status as keyof typeof variants]} className="flex items-center gap-1">
+      <Badge
+        variant={variants[status as keyof typeof variants]}
+        className="flex items-center gap-1"
+      >
         <Icon className="h-3 w-3" />
-        {status.replace("_", " ").replace(/\b\w/g, l => l.toUpperCase())}
+        {status.replace("_", " ").replace(/\b\w/g, (l) => l.toUpperCase())}
       </Badge>
     );
   };
@@ -254,7 +265,7 @@ export default function Notifications() {
   const getTypeBadge = (type: string) => {
     const variants = {
       unban: "destructive",
-      unsuspension: "secondary", 
+      unsuspension: "secondary",
     } as const;
     return (
       <Badge variant={variants[type as keyof typeof variants]}>
@@ -265,9 +276,11 @@ export default function Notifications() {
 
   const getRequestStats = () => {
     const total = appealRequests.length;
-    const pending = appealRequests.filter(r => r.status === "pending").length;
-    const underReview = appealRequests.filter(r => r.status === "under_review").length;
-    const thisWeek = appealRequests.filter(r => {
+    const pending = appealRequests.filter((r) => r.status === "pending").length;
+    const underReview = appealRequests.filter(
+      (r) => r.status === "under_review",
+    ).length;
+    const thisWeek = appealRequests.filter((r) => {
       const submittedDate = new Date(r.submittedAt);
       const weekAgo = new Date();
       weekAgo.setDate(weekAgo.getDate() - 7);
@@ -292,7 +305,9 @@ export default function Notifications() {
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Total Requests</CardTitle>
+            <CardTitle className="text-sm font-medium">
+              Total Requests
+            </CardTitle>
             <Bell className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
@@ -303,7 +318,9 @@ export default function Notifications() {
 
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Pending Review</CardTitle>
+            <CardTitle className="text-sm font-medium">
+              Pending Review
+            </CardTitle>
             <Clock className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
@@ -370,7 +387,9 @@ export default function Notifications() {
               <SelectContent>
                 <SelectItem value="all">All Types</SelectItem>
                 <SelectItem value="unban">Unban Requests</SelectItem>
-                <SelectItem value="unsuspension">Unsuspension Requests</SelectItem>
+                <SelectItem value="unsuspension">
+                  Unsuspension Requests
+                </SelectItem>
               </SelectContent>
             </Select>
             <Button variant="outline" className="w-full md:w-auto">
@@ -430,7 +449,9 @@ export default function Notifications() {
                   <TableCell>
                     <div className="flex items-center space-x-1">
                       <Paperclip className="h-4 w-4 text-muted-foreground" />
-                      <span className="text-sm">{request.attachedDocuments.length}</span>
+                      <span className="text-sm">
+                        {request.attachedDocuments.length}
+                      </span>
                     </div>
                   </TableCell>
                   <TableCell>{getStatusBadge(request.status)}</TableCell>
@@ -455,7 +476,6 @@ export default function Notifications() {
           </Table>
         </CardContent>
       </Card>
-
     </div>
   );
 }

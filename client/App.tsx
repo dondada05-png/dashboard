@@ -57,7 +57,10 @@ const App = () => (
               <Route path="earnings" element={<Earnings />} />
               <Route path="verification" element={<Verification />} />
               <Route path="notifications" element={<Notifications />} />
-              <Route path="notifications/:requestId" element={<AppealReview />} />
+              <Route
+                path="notifications/:requestId"
+                element={<AppealReview />}
+              />
               <Route path="moderation" element={<Reports />} />
               <Route path="settings" element={<Settings />} />
             </Route>

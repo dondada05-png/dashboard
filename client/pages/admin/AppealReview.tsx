@@ -79,7 +79,8 @@ export default function AppealReview() {
       requestType: "unban",
       submittedAt: "2024-01-15T10:30:00Z",
       reason: "False positive ban",
-      userArgument: "I believe my account was wrongfully banned. I was reported by competitors who were jealous of my success on the platform. I have never violated any community guidelines and have always been respectful to other users. I have attached screenshots showing my positive interactions with the community and evidence that the reports against me were coordinated. I would appreciate a review of my case as this ban has severely impacted my income and reputation. I am committed to continuing to create quality content and following all platform rules.",
+      userArgument:
+        "I believe my account was wrongfully banned. I was reported by competitors who were jealous of my success on the platform. I have never violated any community guidelines and have always been respectful to other users. I have attached screenshots showing my positive interactions with the community and evidence that the reports against me were coordinated. I would appreciate a review of my case as this ban has severely impacted my income and reputation. I am committed to continuing to create quality content and following all platform rules.",
       attachedDocuments: [
         {
           id: "doc1",
@@ -89,7 +90,7 @@ export default function AppealReview() {
           uploadedAt: "2024-01-15T10:25:00Z",
         },
         {
-          id: "doc2", 
+          id: "doc2",
           name: "evidence_screenshots.zip",
           type: "ZIP",
           size: "8.7 MB",
@@ -98,7 +99,7 @@ export default function AppealReview() {
         {
           id: "doc3",
           name: "character_references.pdf",
-          type: "PDF", 
+          type: "PDF",
           size: "1.1 MB",
           uploadedAt: "2024-01-15T10:30:00Z",
         },
@@ -111,16 +112,17 @@ export default function AppealReview() {
       id: 2,
       userId: 15,
       username: "suspended_creator",
-      email: "suspended@example.com", 
+      email: "suspended@example.com",
       currentStatus: "suspended",
       requestType: "unsuspension",
       submittedAt: "2024-01-14T16:20:00Z",
       reason: "Misunderstanding about content policy",
-      userArgument: "I was suspended for allegedly posting inappropriate content, but I believe there was a misunderstanding about the nature of my content. My streams are educational in nature and I always ensure they comply with platform guidelines. The reported content was taken out of context. I have been a creator on this platform for over 2 years and have built a positive community. I am willing to undergo additional training on content guidelines if needed.",
+      userArgument:
+        "I was suspended for allegedly posting inappropriate content, but I believe there was a misunderstanding about the nature of my content. My streams are educational in nature and I always ensure they comply with platform guidelines. The reported content was taken out of context. I have been a creator on this platform for over 2 years and have built a positive community. I am willing to undergo additional training on content guidelines if needed.",
       attachedDocuments: [
         {
           id: "doc4",
-          name: "content_explanation.pdf", 
+          name: "content_explanation.pdf",
           type: "PDF",
           size: "1.8 MB",
           uploadedAt: "2024-01-14T16:15:00Z",
@@ -129,7 +131,7 @@ export default function AppealReview() {
           id: "doc5",
           name: "platform_history.pdf",
           type: "PDF",
-          size: "3.2 MB", 
+          size: "3.2 MB",
           uploadedAt: "2024-01-14T16:18:00Z",
         },
       ],
@@ -145,15 +147,16 @@ export default function AppealReview() {
       username: "appeal_user_03",
       email: "appealuser@example.com",
       currentStatus: "banned",
-      requestType: "unban", 
+      requestType: "unban",
       submittedAt: "2024-01-13T14:10:00Z",
       reason: "Account was compromised",
-      userArgument: "My account was compromised by hackers who used it to violate platform rules. I have since secured my account with 2FA and changed all passwords. I was not responsible for the actions that led to the ban. I have attached security reports and evidence of the compromise. I am a long-time user who has always followed the rules and this incident was beyond my control.",
+      userArgument:
+        "My account was compromised by hackers who used it to violate platform rules. I have since secured my account with 2FA and changed all passwords. I was not responsible for the actions that led to the ban. I have attached security reports and evidence of the compromise. I am a long-time user who has always followed the rules and this incident was beyond my control.",
       attachedDocuments: [
         {
           id: "doc6",
           name: "security_report.pdf",
-          type: "PDF", 
+          type: "PDF",
           size: "4.1 MB",
           uploadedAt: "2024-01-13T14:05:00Z",
         },
@@ -166,11 +169,12 @@ export default function AppealReview() {
         },
       ],
       status: "rejected",
-      reviewedBy: "admin_mike", 
+      reviewedBy: "admin_mike",
       reviewedAt: "2024-01-14T11:30:00Z",
       originalBanReason: "Spam and malicious behavior",
       banDate: "2024-01-11T20:15:00Z",
-      adminNotes: "Insufficient evidence of compromise. Pattern of behavior indicates intentional violations.",
+      adminNotes:
+        "Insufficient evidence of compromise. Pattern of behavior indicates intentional violations.",
     },
     {
       id: 4,
@@ -179,15 +183,16 @@ export default function AppealReview() {
       email: "reformed@example.com",
       currentStatus: "suspended",
       requestType: "unsuspension",
-      submittedAt: "2024-01-16T09:45:00Z", 
+      submittedAt: "2024-01-16T09:45:00Z",
       reason: "Changed behavior and understanding",
-      userArgument: "I acknowledge that my previous behavior was inappropriate and I have taken time to reflect on my actions. I have completed anger management courses and now understand the impact of my behavior on the community. I am committed to being a positive member of the platform and following all guidelines. I have attached certificates from my completed courses and would welcome the opportunity to prove that I have changed.",
+      userArgument:
+        "I acknowledge that my previous behavior was inappropriate and I have taken time to reflect on my actions. I have completed anger management courses and now understand the impact of my behavior on the community. I am committed to being a positive member of the platform and following all guidelines. I have attached certificates from my completed courses and would welcome the opportunity to prove that I have changed.",
       attachedDocuments: [
         {
           id: "doc8",
           name: "anger_management_certificate.pdf",
           type: "PDF",
-          size: "890 KB", 
+          size: "890 KB",
           uploadedAt: "2024-01-16T09:40:00Z",
         },
         {
@@ -200,10 +205,11 @@ export default function AppealReview() {
       ],
       status: "approved",
       reviewedBy: "admin_emma",
-      reviewedAt: "2024-01-16T15:20:00Z", 
+      reviewedAt: "2024-01-16T15:20:00Z",
       originalBanReason: "Aggressive behavior and harassment",
       banDate: "2024-01-08T12:00:00Z",
-      adminNotes: "User shows genuine remorse and has taken concrete steps to improve. Approved with 30-day probation period.",
+      adminNotes:
+        "User shows genuine remorse and has taken concrete steps to improve. Approved with 30-day probation period.",
     },
   ];
 
@@ -211,7 +217,9 @@ export default function AppealReview() {
     // Simulate API call to fetch request data
     const fetchRequest = async () => {
       setLoading(true);
-      const foundRequest = mockRequests.find((r) => r.id === parseInt(requestId || "0"));
+      const foundRequest = mockRequests.find(
+        (r) => r.id === parseInt(requestId || "0"),
+      );
       setRequest(foundRequest || null);
       setLoading(false);
     };
@@ -221,16 +229,18 @@ export default function AppealReview() {
 
   const handleAction = async (action: "approve" | "reject") => {
     if (!request) return;
-    
+
     setActionLoading(action);
-    
+
     // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    console.log(`${action} request ${request.id} with response: ${adminResponse}`);
-    
+    await new Promise((resolve) => setTimeout(resolve, 1500));
+
+    console.log(
+      `${action} request ${request.id} with response: ${adminResponse}`,
+    );
+
     setActionLoading("");
-    
+
     // Navigate back to notifications page
     navigate("/admin/notifications");
   };
@@ -238,7 +248,7 @@ export default function AppealReview() {
   const getStatusBadge = (status: string) => {
     const variants = {
       pending: "secondary",
-      under_review: "default", 
+      under_review: "default",
       approved: "default",
       rejected: "destructive",
     } as const;
@@ -250,9 +260,12 @@ export default function AppealReview() {
     };
     const Icon = icons[status as keyof typeof icons];
     return (
-      <Badge variant={variants[status as keyof typeof variants]} className="flex items-center gap-1">
+      <Badge
+        variant={variants[status as keyof typeof variants]}
+        className="flex items-center gap-1"
+      >
         <Icon className="h-3 w-3" />
-        {status.replace("_", " ").replace(/\b\w/g, l => l.toUpperCase())}
+        {status.replace("_", " ").replace(/\b\w/g, (l) => l.toUpperCase())}
       </Badge>
     );
   };
@@ -260,7 +273,7 @@ export default function AppealReview() {
   const getTypeBadge = (type: string) => {
     const variants = {
       unban: "destructive",
-      unsuspension: "secondary", 
+      unsuspension: "secondary",
     } as const;
     return (
       <Badge variant={variants[type as keyof typeof variants]}>
@@ -330,7 +343,8 @@ export default function AppealReview() {
           </div>
           <div>
             <h1 className="text-3xl font-bold tracking-tight">
-              {request.requestType === "unban" ? "Unban" : "Unsuspension"} Appeal Review
+              {request.requestType === "unban" ? "Unban" : "Unsuspension"}{" "}
+              Appeal Review
             </h1>
             <p className="text-muted-foreground">
               {request.username} • {request.email}
@@ -358,15 +372,21 @@ export default function AppealReview() {
               </div>
               <div className="flex justify-between">
                 <span className="text-sm font-medium">Submitted:</span>
-                <span className="text-sm">{new Date(request.submittedAt).toLocaleString()}</span>
+                <span className="text-sm">
+                  {new Date(request.submittedAt).toLocaleString()}
+                </span>
               </div>
               <div className="flex justify-between">
                 <span className="text-sm font-medium">Ban Date:</span>
-                <span className="text-sm">{new Date(request.banDate!).toLocaleDateString()}</span>
+                <span className="text-sm">
+                  {new Date(request.banDate!).toLocaleDateString()}
+                </span>
               </div>
               <div>
                 <span className="text-sm font-medium">Original Reason:</span>
-                <p className="text-sm text-muted-foreground mt-1">{request.originalBanReason}</p>
+                <p className="text-sm text-muted-foreground mt-1">
+                  {request.originalBanReason}
+                </p>
               </div>
             </CardContent>
           </Card>
@@ -388,14 +408,18 @@ export default function AppealReview() {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-sm font-medium">Reviewed At:</span>
-                    <span className="text-sm">{new Date(request.reviewedAt!).toLocaleString()}</span>
+                    <span className="text-sm">
+                      {new Date(request.reviewedAt!).toLocaleString()}
+                    </span>
                   </div>
                 </>
               )}
               {request.adminNotes && (
                 <div>
                   <span className="text-sm font-medium">Admin Notes:</span>
-                  <p className="text-sm text-muted-foreground mt-1">{request.adminNotes}</p>
+                  <p className="text-sm text-muted-foreground mt-1">
+                    {request.adminNotes}
+                  </p>
                 </div>
               )}
             </CardContent>
@@ -406,7 +430,9 @@ export default function AppealReview() {
         <Card>
           <CardHeader>
             <CardTitle className="text-base">User's Argument</CardTitle>
-            <CardDescription>Reason provided by {request.username}</CardDescription>
+            <CardDescription>
+              Reason provided by {request.username}
+            </CardDescription>
           </CardHeader>
           <CardContent>
             <div className="space-y-3">
@@ -415,9 +441,13 @@ export default function AppealReview() {
                 <p className="text-sm font-medium mt-1">{request.reason}</p>
               </div>
               <div>
-                <Label className="text-sm font-medium">Detailed Argument:</Label>
+                <Label className="text-sm font-medium">
+                  Detailed Argument:
+                </Label>
                 <div className="mt-2 p-4 bg-muted rounded-md">
-                  <p className="text-sm whitespace-pre-wrap">{request.userArgument}</p>
+                  <p className="text-sm whitespace-pre-wrap">
+                    {request.userArgument}
+                  </p>
                 </div>
               </div>
             </div>
@@ -428,12 +458,17 @@ export default function AppealReview() {
         <Card>
           <CardHeader>
             <CardTitle className="text-base">Attached Documents</CardTitle>
-            <CardDescription>{request.attachedDocuments.length} files attached</CardDescription>
+            <CardDescription>
+              {request.attachedDocuments.length} files attached
+            </CardDescription>
           </CardHeader>
           <CardContent>
             <div className="space-y-3">
               {request.attachedDocuments.map((doc) => (
-                <div key={doc.id} className="flex items-center justify-between p-4 border rounded-md">
+                <div
+                  key={doc.id}
+                  className="flex items-center justify-between p-4 border rounded-md"
+                >
                   <div className="flex items-center space-x-3">
                     <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/20 rounded-md flex items-center justify-center">
                       <FileText className="h-6 w-6 text-blue-600" />
@@ -441,7 +476,8 @@ export default function AppealReview() {
                     <div>
                       <p className="text-sm font-medium">{doc.name}</p>
                       <p className="text-xs text-muted-foreground">
-                        {doc.type} • {doc.size} • Uploaded {new Date(doc.uploadedAt).toLocaleDateString()}
+                        {doc.type} • {doc.size} • Uploaded{" "}
+                        {new Date(doc.uploadedAt).toLocaleDateString()}
                       </p>
                     </div>
                   </div>
@@ -456,11 +492,14 @@ export default function AppealReview() {
         </Card>
 
         {/* Admin Response */}
-        {(request.status === "pending" || request.status === "under_review") && (
+        {(request.status === "pending" ||
+          request.status === "under_review") && (
           <Card>
             <CardHeader>
               <CardTitle className="text-base">Admin Decision</CardTitle>
-              <CardDescription>Provide your decision and reasoning</CardDescription>
+              <CardDescription>
+                Provide your decision and reasoning
+              </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <div>
@@ -474,7 +513,8 @@ export default function AppealReview() {
                   className="mt-2"
                 />
                 <p className="text-xs text-muted-foreground mt-1">
-                  This message will be sent to the user along with your decision.
+                  This message will be sent to the user along with your
+                  decision.
                 </p>
               </div>
 
@@ -488,19 +528,27 @@ export default function AppealReview() {
                   </AlertDialogTrigger>
                   <AlertDialogContent>
                     <AlertDialogHeader>
-                      <AlertDialogTitle>Approve {request.requestType} Request?</AlertDialogTitle>
+                      <AlertDialogTitle>
+                        Approve {request.requestType} Request?
+                      </AlertDialogTitle>
                       <AlertDialogDescription>
-                        This will {request.requestType === "unban" ? "unban" : "unsuspend"} {request.username}'s account.
-                        They will be notified with your response message.
+                        This will{" "}
+                        {request.requestType === "unban"
+                          ? "unban"
+                          : "unsuspend"}{" "}
+                        {request.username}'s account. They will be notified with
+                        your response message.
                       </AlertDialogDescription>
                     </AlertDialogHeader>
                     <AlertDialogFooter>
                       <AlertDialogCancel>Cancel</AlertDialogCancel>
-                      <AlertDialogAction 
+                      <AlertDialogAction
                         onClick={() => handleAction("approve")}
                         disabled={actionLoading === "approve"}
                       >
-                        {actionLoading === "approve" ? "Approving..." : "Approve"}
+                        {actionLoading === "approve"
+                          ? "Approving..."
+                          : "Approve"}
                       </AlertDialogAction>
                     </AlertDialogFooter>
                   </AlertDialogContent>
@@ -508,22 +556,29 @@ export default function AppealReview() {
 
                 <AlertDialog>
                   <AlertDialogTrigger asChild>
-                    <Button variant="destructive" className="flex-1" disabled={!adminResponse.trim()}>
+                    <Button
+                      variant="destructive"
+                      className="flex-1"
+                      disabled={!adminResponse.trim()}
+                    >
                       <XCircle className="mr-2 h-4 w-4" />
                       Reject Request
                     </Button>
                   </AlertDialogTrigger>
                   <AlertDialogContent>
                     <AlertDialogHeader>
-                      <AlertDialogTitle>Reject {request.requestType} Request?</AlertDialogTitle>
+                      <AlertDialogTitle>
+                        Reject {request.requestType} Request?
+                      </AlertDialogTitle>
                       <AlertDialogDescription>
-                        This will reject {request.username}'s {request.requestType} request.
-                        They will be notified with your response message.
+                        This will reject {request.username}'s{" "}
+                        {request.requestType} request. They will be notified
+                        with your response message.
                       </AlertDialogDescription>
                     </AlertDialogHeader>
                     <AlertDialogFooter>
                       <AlertDialogCancel>Cancel</AlertDialogCancel>
-                      <AlertDialogAction 
+                      <AlertDialogAction
                         onClick={() => handleAction("reject")}
                         disabled={actionLoading === "reject"}
                         className="bg-destructive hover:bg-destructive/90"
@@ -556,7 +611,9 @@ export default function AppealReview() {
               </div>
               <div className="flex justify-between">
                 <span className="text-sm font-medium">Reviewed At:</span>
-                <span className="text-sm">{new Date(request.reviewedAt!).toLocaleString()}</span>
+                <span className="text-sm">
+                  {new Date(request.reviewedAt!).toLocaleString()}
+                </span>
               </div>
               {request.adminNotes && (
                 <div>
