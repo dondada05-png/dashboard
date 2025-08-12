@@ -22,6 +22,7 @@ import Verification from "./pages/admin/Verification";
 import Settings from "./pages/admin/Settings";
 import Creators from "./pages/admin/Creators";
 import UserProfile from "./pages/admin/UserProfile";
+import Notifications from "./pages/admin/Notifications";
 
 const queryClient = new QueryClient();
 
