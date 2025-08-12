@@ -399,9 +399,9 @@ export default function Earnings() {
               <ResponsiveContainer width="100%" height={400}>
                 <LineChart data={retentionData}>
                   <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="month" />
-                  <YAxis yAxisId="left" />
-                  <YAxis yAxisId="right" orientation="right" />
+                  <XAxis dataKey="month" type="category" />
+                  <YAxis yAxisId="left" type="number" />
+                  <YAxis yAxisId="right" type="number" orientation="right" />
                   <Tooltip />
                   <Line
                     yAxisId="left"
