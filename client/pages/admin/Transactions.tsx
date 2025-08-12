@@ -319,8 +319,8 @@ export default function Transactions() {
               <ResponsiveContainer width="100%" height={400}>
                 <BarChart data={weeklyData}>
                   <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="day" />
-                  <YAxis />
+                  <XAxis dataKey="day" type="category" />
+                  <YAxis type="number" />
                   <Tooltip />
                   <Bar dataKey="purchases" fill="#8884d8" />
                   <Bar dataKey="tips" fill="#82ca9d" />
