@@ -23,6 +23,7 @@ import Settings from "./pages/admin/Settings";
 import Creators from "./pages/admin/Creators";
 import UserProfile from "./pages/admin/UserProfile";
 import Notifications from "./pages/admin/Notifications";
+import AppealReview from "./pages/admin/AppealReview";
 
 const queryClient = new QueryClient();
 
