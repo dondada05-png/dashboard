@@ -71,13 +71,10 @@ interface AppealRequest {
 }
 
 export default function Notifications() {
+  const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState("");
   const [statusFilter, setStatusFilter] = useState("all");
   const [typeFilter, setTypeFilter] = useState("all");
-  const [selectedRequest, setSelectedRequest] = useState<AppealRequest | null>(null);
-  const [isDialogOpen, setIsDialogOpen] = useState(false);
-  const [adminResponse, setAdminResponse] = useState("");
-  const [actionLoading, setActionLoading] = useState("");
 
   // Mock data for appeal requests
   const appealRequests: AppealRequest[] = [
