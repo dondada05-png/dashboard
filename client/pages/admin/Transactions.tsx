@@ -246,8 +246,8 @@ export default function Transactions() {
                 <ResponsiveContainer width="100%" height={300}>
                   <AreaChart data={weeklyData}>
                     <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="day" />
-                    <YAxis />
+                    <XAxis dataKey="day" type="category" />
+                    <YAxis type="number" />
                     <Tooltip />
                     <Area
                       type="monotone"
