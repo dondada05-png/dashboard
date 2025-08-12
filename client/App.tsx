@@ -55,7 +55,7 @@ const App = () => (
               <Route path="transactions" element={<Transactions />} />
               <Route path="earnings" element={<Earnings />} />
               <Route path="verification" element={<Verification />} />
-              <Route path="notifications" element={<Dashboard />} />
+              <Route path="notifications" element={<Notifications />} />
               <Route path="moderation" element={<Reports />} />
               <Route path="settings" element={<Settings />} />
             </Route>
