@@ -226,23 +226,7 @@ export default function Notifications() {
   });
 
   const handleViewRequest = (request: AppealRequest) => {
-    setSelectedRequest(request);
-    setIsDialogOpen(true);
-    setAdminResponse("");
-  };
-
-  const handleAction = async (action: "approve" | "reject", requestId: number) => {
-    setActionLoading(action);
-    
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    console.log(`${action} request ${requestId} with response: ${adminResponse}`);
-    
-    setActionLoading("");
-    setIsDialogOpen(false);
-    setSelectedRequest(null);
-    setAdminResponse("");
+    navigate(`/admin/notifications/${request.id}`);
   };
 
   const getStatusBadge = (status: string) => {
